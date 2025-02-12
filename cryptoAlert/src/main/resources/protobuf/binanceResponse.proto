@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.greex.price_alert.proto;
+
+message PriceResponse {
+  string symbol = 1;
+  string price = 2;
+}
+
+message HistoricalPriceResponse {
+  repeated string data = 1;
+}
